@@ -1,0 +1,10 @@
+{
+
+  "system":true,
+  "resident":true,
+  // If your module is going to be registered in the Vert.x module registry you will also need the following
+  // mandatory fields
+  "description":"Spring language implementation",
+  "licenses": ["The Apache Software License Version 2.0"],
+  "author": "Jochen Mader"
+}

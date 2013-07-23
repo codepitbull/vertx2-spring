@@ -1,0 +1,45 @@
+apply from: "gradle/vertx.gradle"
+apply plugin:'maven'
+
+dependencies {
+  provided "de.codepitbull.vertx:spring-lang:1.0.0-final"
+}
+
+repositories{
+    mavenLocal()
+}
+
+
+def configurePom(def pom) {
+  pom.project {
+    name rootProject.name
+    description 'A small test for the Spring language'
+    inceptionYear '2013'
+    packaging 'jar'
+
+    url 'Your project url'
+
+    developers {
+      developer {
+        id 'codepitbull'
+        name 'Jochen Mader'
+      }
+    }
+
+    scm {
+      url 'git@github.com:codepitbull/vertx2-spring.git'
+    }
+
+    licenses {
+      license {
+        name 'The Apache Software License, Version 2.0'
+        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+        distribution 'repo'
+      }
+    }
+
+    properties {
+      setProperty('project.build.sourceEncoding', 'UTF8')
+    }
+  }
+}

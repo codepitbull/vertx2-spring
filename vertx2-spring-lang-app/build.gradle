@@ -1,0 +1,20 @@
+apply plugin:'java'
+apply plugin:'maven'
+
+repositories {
+	mavenCentral()
+}
+
+def spring_version = '3.2.3.RELEASE'
+def vertxVersion = '2.0.0-final'
+
+dependencies {
+	compile "org.springframework:spring-core:${spring_version}"
+	compile "org.springframework:spring-aspects:${spring_version}"
+	compile "org.springframework:spring-context:${spring_version}"
+	compile "io.vertx:vertx-core:$vertxVersion"
+	compile "io.vertx:vertx-platform:$vertxVersion"
+    compile "de.codepitbull.vertx:spring-lang:1.0.0-final"
+    compile "de.codepitbull:spring-lang-test:1.0.0-final"
+    compile "de.codepitbull:spring-lang-spring:1.0.0-final"
+}

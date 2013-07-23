@@ -1,0 +1,1 @@
+include 'vertx2-spring-lang', 'vertx2-spring-lang-demo', 'vertx2-spring-lang-app'
